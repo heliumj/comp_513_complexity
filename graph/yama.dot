@@ -1,0 +1,18 @@
+digraph "source tree" {
+    overlap=scale;
+    size="8,10";
+    ratio="fill";
+    fontsize="16";
+    fontname="Helvetica";
+	clusterrank="local";
+"linux/lsm_hooks.h"->"yama_lsm.c"
+"linux/sysctl.h"->"yama_lsm.c"
+"linux/ptrace.h"->"yama_lsm.c"
+"linux/prctl.h"->"yama_lsm.c"
+"linux/ratelimit.h"->"yama_lsm.c"
+"linux/workqueue.h"->"yama_lsm.c"
+"linux/string_helpers.h"->"yama_lsm.c"
+"linux/task_work.h"->"yama_lsm.c"
+"linux/sched.h"->"yama_lsm.c"
+"linux/spinlock.h"->"yama_lsm.c"
+}

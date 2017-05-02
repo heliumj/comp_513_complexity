@@ -1,0 +1,2255 @@
+%!PS-Adobe-3.0
+%%Creator: graphviz version 2.40.1 (20161225.0304)
+%%Title: source tree
+%%Pages: (atend)
+%%BoundingBox: (atend)
+%%EndComments
+save
+%%BeginProlog
+/DotDict 200 dict def
+DotDict begin
+
+/setupLatin1 {
+mark
+/EncodingVector 256 array def
+ EncodingVector 0
+
+ISOLatin1Encoding 0 255 getinterval putinterval
+EncodingVector 45 /hyphen put
+
+% Set up ISO Latin 1 character encoding
+/starnetISO {
+        dup dup findfont dup length dict begin
+        { 1 index /FID ne { def }{ pop pop } ifelse
+        } forall
+        /Encoding EncodingVector def
+        currentdict end definefont
+} def
+/Times-Roman starnetISO def
+/Times-Italic starnetISO def
+/Times-Bold starnetISO def
+/Times-BoldItalic starnetISO def
+/Helvetica starnetISO def
+/Helvetica-Oblique starnetISO def
+/Helvetica-Bold starnetISO def
+/Helvetica-BoldOblique starnetISO def
+/Courier starnetISO def
+/Courier-Oblique starnetISO def
+/Courier-Bold starnetISO def
+/Courier-BoldOblique starnetISO def
+cleartomark
+} bind def
+
+%%BeginResource: procset graphviz 0 0
+/coord-font-family /Times-Roman def
+/default-font-family /Times-Roman def
+/coordfont coord-font-family findfont 8 scalefont def
+
+/InvScaleFactor 1.0 def
+/set_scale {
+       dup 1 exch div /InvScaleFactor exch def
+       scale
+} bind def
+
+% styles
+/solid { [] 0 setdash } bind def
+/dashed { [9 InvScaleFactor mul dup ] 0 setdash } bind def
+/dotted { [1 InvScaleFactor mul 6 InvScaleFactor mul] 0 setdash } bind def
+/invis {/fill {newpath} def /stroke {newpath} def /show {pop newpath} def} bind def
+/bold { 2 setlinewidth } bind def
+/filled { } bind def
+/unfilled { } bind def
+/rounded { } bind def
+/diagonals { } bind def
+/tapered { } bind def
+
+% hooks for setting color 
+/nodecolor { sethsbcolor } bind def
+/edgecolor { sethsbcolor } bind def
+/graphcolor { sethsbcolor } bind def
+/nopcolor {pop pop pop} bind def
+
+/beginpage {	% i j npages
+	/npages exch def
+	/j exch def
+	/i exch def
+	/str 10 string def
+	npages 1 gt {
+		gsave
+			coordfont setfont
+			0 0 moveto
+			(\() show i str cvs show (,) show j str cvs show (\)) show
+		grestore
+	} if
+} bind def
+
+/set_font {
+	findfont exch
+	scalefont setfont
+} def
+
+% draw text fitted to its expected width
+/alignedtext {			% width text
+	/text exch def
+	/width exch def
+	gsave
+		width 0 gt {
+			[] 0 setdash
+			text stringwidth pop width exch sub text length div 0 text ashow
+		} if
+	grestore
+} def
+
+/boxprim {				% xcorner ycorner xsize ysize
+		4 2 roll
+		moveto
+		2 copy
+		exch 0 rlineto
+		0 exch rlineto
+		pop neg 0 rlineto
+		closepath
+} bind def
+
+/ellipse_path {
+	/ry exch def
+	/rx exch def
+	/y exch def
+	/x exch def
+	matrix currentmatrix
+	newpath
+	x y translate
+	rx ry scale
+	0 0 1 0 360 arc
+	setmatrix
+} bind def
+
+/endpage { showpage } bind def
+/showpage { } def
+
+/layercolorseq
+	[	% layer color sequence - darkest to lightest
+		[0 0 0]
+		[.2 .8 .8]
+		[.4 .8 .8]
+		[.6 .8 .8]
+		[.8 .8 .8]
+	]
+def
+
+/layerlen layercolorseq length def
+
+/setlayer {/maxlayer exch def /curlayer exch def
+	layercolorseq curlayer 1 sub layerlen mod get
+	aload pop sethsbcolor
+	/nodecolor {nopcolor} def
+	/edgecolor {nopcolor} def
+	/graphcolor {nopcolor} def
+} bind def
+
+/onlayer { curlayer ne {invis} if } def
+
+/onlayers {
+	/myupper exch def
+	/mylower exch def
+	curlayer mylower lt
+	curlayer myupper gt
+	or
+	{invis} if
+} def
+
+/curlayer 0 def
+
+%%EndResource
+%%EndProlog
+%%BeginSetup
+14 default-font-family set_font
+% /arrowlength 10 def
+% /arrowwidth 5 def
+
+% make sure pdfmark is harmless for PS-interpreters other than Distiller
+/pdfmark where {pop} {userdict /pdfmark /cleartomark load put} ifelse
+% make '<<' and '>>' safe on PS Level 1 devices
+/languagelevel where {pop languagelevel}{1} ifelse
+2 lt {
+    userdict (<<) cvn ([) cvn load put
+    userdict (>>) cvn ([) cvn load put
+} if
+
+%%EndSetup
+setupLatin1
+%%Page: 1 1
+%%PageBoundingBox: 36 36 612 756
+%%PageOrientation: Portrait
+0 0 1 beginpage
+gsave
+36 36 576 720 boxprim clip newpath
+0.0631391 0.0631391 set_scale 0 rotate 574.169 574.169 translate
+% linux/types.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+871.6408 9494 56.0855 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+835.2805 9489.8 moveto 72.7207 (linux/types.h) alignedtext
+grestore
+% avc.c
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+1517.6408 1899 28.5298 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1503.07 1894.8 moveto 29.1416 (avc.c) alignedtext
+grestore
+% linux/types.h->avc.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 873.192 9475.7631 moveto
+906.7428 9081.307 1473.7353 2415.1961 1515.2434 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 1518.7407 1927.3658 moveto
+1516.1009 1917.1051 lineto
+1511.7659 1926.7724 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1518.7407 1927.3658 moveto
+1516.1009 1917.1051 lineto
+1511.7659 1926.7724 lineto
+closepath stroke
+grestore
+% linux/stddef.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+1004.6408 9494 58.9754 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+965.9494 9489.8 moveto 77.3828 (linux/stddef.h) alignedtext
+grestore
+% linux/stddef.h->avc.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1005.8726 9475.7631 moveto
+1032.5159 9081.307 1482.7746 2415.1961 1515.737 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 1519.236 1927.3182 moveto
+1516.4179 1917.1051 lineto
+1512.2519 1926.8464 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1519.236 1927.3182 moveto
+1516.4179 1917.1051 lineto
+1512.2519 1926.8464 lineto
+closepath stroke
+grestore
+% linux/kernel.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+2845.6408 9494 59.4427 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+2806.5666 9489.8 moveto 78.1484 (linux/kernel.h) alignedtext
+grestore
+% linux/kernel.h->avc.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 2842.4521 9475.7631 moveto
+2773.4807 9081.307 1607.8987 2415.1961 1522.5693 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 1525.9767 1926.3528 moveto
+1520.8065 1917.1051 lineto
+1519.0813 1927.5585 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1525.9767 1926.3528 moveto
+1520.8065 1917.1051 lineto
+1519.0813 1927.5585 lineto
+closepath stroke
+grestore
+% hooks.c
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+5803.6408 1899 37.243 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+5782.0598 1894.8 moveto 43.1621 (hooks.c) alignedtext
+grestore
+% linux/kernel.h->hooks.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 2852.6237 9476.0705 moveto
+3005.0906 9084.5946 5605.0858 2408.8124 5792.9397 1926.4762 curveto
+stroke
+0 0 0 edgecolor
+newpath 5796.3341 1927.4048 moveto
+5796.7019 1916.8163 lineto
+5789.8114 1924.8643 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5796.3341 1927.4048 moveto
+5796.7019 1916.8163 lineto
+5789.8114 1924.8643 lineto
+closepath stroke
+grestore
+% selinuxfs.c
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+2554.6408 1899 48.351 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+2524.508 1894.8 moveto 60.2656 (selinuxfs.c) alignedtext
+grestore
+% linux/kernel.h->selinuxfs.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 2844.9421 9475.7631 moveto
+2829.8286 9081.307 2574.4187 2415.1961 2555.7208 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 2559.2149 1926.9637 moveto
+2555.3345 1917.1051 lineto
+2552.22 1927.2318 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 2559.2149 1926.9637 moveto
+2555.3345 1917.1051 lineto
+2552.22 1927.2318 lineto
+closepath stroke
+grestore
+% linux/slab.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+2974.6408 9494 51.7423 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+2941.7805 9489.8 moveto 65.7207 (linux/slab.h) alignedtext
+grestore
+% linux/slab.h->avc.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 2971.1423 9475.7631 moveto
+2895.4711 9081.307 1616.6662 2415.1961 1523.048 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 1526.4354 1926.2666 moveto
+1521.114 1917.1051 lineto
+1519.5608 1927.5854 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1526.4354 1926.2666 moveto
+1521.114 1917.1051 lineto
+1519.5608 1927.5854 lineto
+closepath stroke
+grestore
+% linux/slab.h->hooks.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 2981.3192 9476.0705 moveto
+3127.1369 9084.5946 5613.7449 2408.8124 5793.4064 1926.4762 curveto
+stroke
+0 0 0 edgecolor
+newpath 5796.7938 1927.4091 moveto
+5797.0046 1916.8163 lineto
+5790.2341 1924.9656 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5796.7938 1927.4091 moveto
+5797.0046 1916.8163 lineto
+5790.2341 1924.9656 lineto
+closepath stroke
+grestore
+% linux/slab.h->selinuxfs.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 2973.6323 9475.7631 moveto
+2951.8191 9081.307 2583.1862 2415.1961 2556.1995 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 2559.6889 1926.8965 moveto
+2555.642 1917.1051 lineto
+2552.6996 1927.2831 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 2559.6889 1926.8965 moveto
+2555.642 1917.1051 lineto
+2552.6996 1927.2831 lineto
+closepath stroke
+grestore
+% linux/fs.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+1962.6408 9494 43.5254 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1936.0012 9489.8 moveto 53.2793 (linux/fs.h) alignedtext
+grestore
+% linux/fs.h->avc.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1961.5723 9475.7631 moveto
+1938.4606 9081.307 1547.8854 2415.1961 1519.2923 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 1522.7806 1926.8832 moveto
+1518.7016 1917.1051 lineto
+1515.7926 1927.2927 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1522.7806 1926.8832 moveto
+1518.7016 1917.1051 lineto
+1515.7926 1927.2927 lineto
+closepath stroke
+grestore
+% linux/fs.h->selinuxfs.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1964.0623 9475.7631 moveto
+1994.8086 9081.307 2514.4054 2415.1961 2552.4438 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 2555.9418 1927.3469 moveto
+2553.2296 1917.1051 lineto
+2548.963 1926.8028 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 2555.9418 1927.3469 moveto
+2553.2296 1917.1051 lineto
+2548.963 1926.8028 lineto
+closepath stroke
+grestore
+% linux/dcache.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+1143.6408 9494 61.8395 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1102.6286 9489.8 moveto 82.0244 (linux/dcache.h) alignedtext
+grestore
+% linux/dcache.h->avc.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1144.5388 9475.7631 moveto
+1163.963 9081.307 1492.2218 2415.1961 1516.2528 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 1519.7531 1927.2652 moveto
+1516.7493 1917.1051 lineto
+1512.7616 1926.9208 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1519.7531 1927.2652 moveto
+1516.7493 1917.1051 lineto
+1512.7616 1926.9208 lineto
+closepath stroke
+grestore
+% linux/init.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+2073.6408 9494 49.3373 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+2042.7219 9489.8 moveto 61.8379 (linux/init.h) alignedtext
+grestore
+% linux/init.h->avc.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 2072.3058 9475.7631 moveto
+2043.4292 9081.307 1555.4295 2415.1961 1519.7042 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 1523.1871 1926.8228 moveto
+1518.9662 1917.1051 lineto
+1516.2058 1927.334 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1523.1871 1926.8228 moveto
+1518.9662 1917.1051 lineto
+1516.2058 1927.334 lineto
+closepath stroke
+grestore
+% linux/init.h->hooks.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 2082.4462 9476.0705 moveto
+2274.8006 9084.3998 5556.5281 2402.1691 5790.4981 1925.761 curveto
+stroke
+0 0 0 edgecolor
+newpath 5793.7694 1927.0398 moveto
+5795.036 1916.521 lineto
+5787.4862 1923.954 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5793.7694 1927.0398 moveto
+5795.036 1916.521 lineto
+5787.4862 1923.954 lineto
+closepath stroke
+grestore
+% linux/init.h->selinuxfs.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 2074.7958 9475.7631 moveto
+2099.7771 9081.307 2521.9495 2415.1961 2552.8557 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 2556.3551 1927.3063 moveto
+2553.4942 1917.1051 lineto
+2549.3691 1926.8638 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 2556.3551 1927.3063 moveto
+2553.4942 1917.1051 lineto
+2549.3691 1926.8638 lineto
+closepath stroke
+grestore
+% linux/skbuff.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+1283.6408 9494 59.6341 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1244.2932 9489.8 moveto 78.6953 (linux/skbuff.h) alignedtext
+grestore
+% linux/skbuff.h->avc.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1284.2027 9475.7631 moveto
+1296.3558 9081.307 1501.7369 2415.1961 1516.7724 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 1520.2733 1927.2082 moveto
+1517.083 1917.1051 lineto
+1513.2766 1926.9925 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1520.2733 1927.2082 moveto
+1517.083 1917.1051 lineto
+1513.2766 1926.9925 lineto
+closepath stroke
+grestore
+% net/sock.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+1407.6408 9494 46.4218 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1379.0632 9489.8 moveto 57.1553 (net/sock.h) alignedtext
+grestore
+% net/sock.h->avc.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1407.9049 9475.7631 moveto
+1413.6179 9081.307 1510.1646 2415.1961 1517.2326 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 1520.7333 1927.1548 moveto
+1517.3786 1917.1051 lineto
+1513.734 1927.0533 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1520.7333 1927.1548 moveto
+1517.3786 1917.1051 lineto
+1513.734 1927.0533 lineto
+closepath stroke
+grestore
+% linux/un.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+1517.6408 9494 46.4392 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1489.0563 9489.8 moveto 57.1689 (linux/un.h) alignedtext
+grestore
+% linux/un.h->avc.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1517.6408 9475.7631 moveto
+1517.6408 9081.307 1517.6408 2415.1961 1517.6408 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 1521.1409 1927.105 moveto
+1517.6408 1917.1051 lineto
+1514.1409 1927.1051 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1521.1409 1927.105 moveto
+1517.6408 1917.1051 lineto
+1514.1409 1927.1051 lineto
+closepath stroke
+grestore
+% net/af_unix.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+1638.6408 9494 57.0287 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1601.5114 9489.8 moveto 74.2588 (net/af_unix.h) alignedtext
+grestore
+% net/af_unix.h->avc.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1638.3503 9475.7631 moveto
+1632.066 9081.307 1525.8646 2415.1961 1518.0899 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 1521.5882 1927.048 moveto
+1517.9293 1917.1051 lineto
+1514.5891 1927.1596 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1521.5882 1927.048 moveto
+1517.9293 1917.1051 lineto
+1514.5891 1927.1596 lineto
+closepath stroke
+grestore
+% linux/ip.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+1757.6408 9494 44.01 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1730.6115 9489.8 moveto 54.0586 (linux/ip.h) alignedtext
+grestore
+% linux/ip.h->avc.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1757.0645 9475.7631 moveto
+1744.5998 9081.307 1533.9525 2415.1961 1518.5315 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 1522.0271 1926.9895 moveto
+1518.2129 1917.1051 lineto
+1515.0306 1927.2107 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1522.0271 1926.9895 moveto
+1518.2129 1917.1051 lineto
+1515.0306 1927.2107 lineto
+closepath stroke
+grestore
+% linux/udp.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+50.6408 9494 50.782 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+18.5563 9489.8 moveto 64.1689 (linux/udp.h) alignedtext
+grestore
+% linux/udp.h->avc.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 54.1633 9475.7631 moveto
+130.3539 9081.307 1417.9358 2415.1961 1512.1965 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 1515.6837 1927.5874 moveto
+1514.1438 1917.1051 lineto
+1508.8107 1926.2598 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1515.6837 1927.5874 moveto
+1514.1438 1917.1051 lineto
+1508.8107 1926.2598 lineto
+closepath stroke
+grestore
+% linux/tcp.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+3092.6408 9494 48.3597 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+3062.5046 9489.8 moveto 60.2725 (linux/tcp.h) alignedtext
+grestore
+% linux/tcp.h->avc.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 3088.859 9475.7631 moveto
+3007.0593 9081.307 1624.6861 2415.1961 1523.4859 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 1526.853 1926.186 moveto
+1521.3953 1917.1051 lineto
+1519.9988 1927.6075 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1526.853 1926.186 moveto
+1521.3953 1917.1051 lineto
+1519.9988 1927.6075 lineto
+closepath stroke
+grestore
+% linux/tcp.h->hooks.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 3099.0406 9476.0705 moveto
+3238.7762 9084.5946 5621.6656 2408.8124 5793.8333 1926.4762 curveto
+stroke
+0 0 0 edgecolor
+newpath 5797.2159 1927.411 moveto
+5797.2814 1916.8163 lineto
+5790.6233 1925.0577 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5797.2159 1927.411 moveto
+5797.2814 1916.8163 lineto
+5790.6233 1925.0577 lineto
+closepath stroke
+grestore
+% avc.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+2169.6408 9494 29.0229 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+2154.6769 9489.8 moveto 29.9277 (avc.h) alignedtext
+grestore
+% avc.h->avc.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 2168.0752 9475.7631 moveto
+2134.2128 9081.307 1561.9542 2415.1961 1520.0605 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 1523.5376 1926.769 moveto
+1519.1951 1917.1051 lineto
+1516.5633 1927.3678 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1523.5376 1926.769 moveto
+1519.1951 1917.1051 lineto
+1516.5633 1927.3678 lineto
+closepath stroke
+grestore
+% avc.h->hooks.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 2177.929 9476.6777 moveto
+2362.2405 9091.4698 5561.0415 2406.0285 5790.651 1926.1484 curveto
+stroke
+0 0 0 edgecolor
+newpath 5793.9487 1927.3653 moveto
+5795.1077 1916.8341 lineto
+5787.6343 1924.344 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5793.9487 1927.3653 moveto
+5795.1077 1916.8341 lineto
+5787.6343 1924.344 lineto
+closepath stroke
+grestore
+% avc.h->selinuxfs.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 2170.5653 9475.7631 moveto
+2190.5607 9081.307 2528.4742 2415.1961 2553.212 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 2556.7122 1927.2695 moveto
+2553.723 1917.1051 lineto
+2549.7212 1926.915 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 2556.7122 1927.2695 moveto
+2553.723 1917.1051 lineto
+2549.7212 1926.915 lineto
+closepath stroke
+grestore
+% avc_ss.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+1860.6408 9494 40.1333 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1836.7287 9489.8 moveto 47.8242 (avc_ss.h) alignedtext
+grestore
+% avc_ss.h->avc.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1859.8172 9475.7631 moveto
+1842.0031 9081.307 1540.9529 2415.1961 1518.9137 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 1522.4061 1926.937 moveto
+1518.4585 1917.1051 lineto
+1515.4133 1927.2528 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1522.4061 1926.937 moveto
+1518.4585 1917.1051 lineto
+1515.4133 1927.2528 lineto
+closepath stroke
+grestore
+% avc_ss.h->selinuxfs.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1862.3072 9475.7631 moveto
+1898.351 9081.307 2507.4729 2415.1961 2552.0652 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 2555.5619 1927.3821 moveto
+2552.9864 1917.1051 lineto
+2548.5909 1926.7451 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 2555.5619 1927.3821 moveto
+2552.9864 1917.1051 lineto
+2548.5909 1926.7451 lineto
+closepath stroke
+grestore
+% class_to_string.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+188.6408 9494 69.5924 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+141.3942 9489.8 moveto 94.4932 (class_to_string.h) alignedtext
+grestore
+% class_to_string.h->avc.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 191.832 9475.7631 moveto
+260.8553 9081.307 1427.315 2415.1961 1512.7086 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 1516.1966 1927.5587 moveto
+1514.4727 1917.1051 lineto
+1509.3014 1926.3521 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1516.1966 1927.5587 moveto
+1514.4727 1917.1051 lineto
+1509.3014 1926.3521 lineto
+closepath stroke
+grestore
+% common_perm_to_string.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+382.6408 9494 106.2915 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+306.6218 9489.8 moveto 152.0381 (common_perm_to_string.h) alignedtext
+grestore
+% common_perm_to_string.h->avc.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 385.3661 9475.7631 moveto
+444.3138 9081.307 1440.5002 2415.1961 1513.4286 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 1516.9187 1927.5126 moveto
+1514.9352 1917.1051 lineto
+1509.9955 1926.4779 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1516.9187 1927.5126 moveto
+1514.9352 1917.1051 lineto
+1509.9955 1926.4779 lineto
+closepath stroke
+grestore
+% av_inherit.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+559.6408 9494 52.6853 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+526.0114 9489.8 moveto 67.2588 (av_inherit.h) alignedtext
+grestore
+% av_inherit.h->avc.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 561.9411 9475.7631 moveto
+611.6961 9081.307 1452.5301 2415.1961 1514.0855 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 1517.5781 1927.4645 moveto
+1515.3571 1917.1051 lineto
+1510.6331 1926.5884 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1517.5781 1927.4645 moveto
+1515.3571 1917.1051 lineto
+1510.6331 1926.5884 lineto
+closepath stroke
+grestore
+% av_perm_to_string.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+713.6408 9494 83.5895 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+655.5114 9489.8 moveto 116.2588 (av_perm_to_string.h) alignedtext
+grestore
+% av_perm_to_string.h->avc.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 715.5714 9475.7631 moveto
+757.3281 9081.307 1462.9967 2415.1961 1514.657 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 1518.152 1927.418 moveto
+1515.7242 1917.1051 lineto
+1511.1909 1926.681 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1518.152 1927.418 moveto
+1515.7242 1917.1051 lineto
+1511.1909 1926.681 lineto
+closepath stroke
+grestore
+% objsec.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+2255.6408 9494 39.1641 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+2232.508 9489.8 moveto 46.2656 (objsec.h) alignedtext
+grestore
+% objsec.h->avc.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 2253.8687 9475.7631 moveto
+2215.5398 9081.307 1567.7992 2415.1961 1520.3797 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 1523.8509 1926.7197 moveto
+1519.4001 1917.1051 lineto
+1516.8837 1927.3967 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1523.8509 1926.7197 moveto
+1519.4001 1917.1051 lineto
+1516.8837 1927.3967 lineto
+closepath stroke
+grestore
+% objsec.h->hooks.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 2263.8741 9476.3754 moveto
+2445.3111 9087.9837 5566.8996 2405.7784 5790.9647 1926.1349 curveto
+stroke
+0 0 0 edgecolor
+newpath 5794.2523 1927.3667 moveto
+5795.3138 1916.8252 lineto
+5787.9102 1924.404 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5794.2523 1927.3667 moveto
+5795.3138 1916.8252 lineto
+5787.9102 1924.404 lineto
+closepath stroke
+grestore
+% objsec.h->selinuxfs.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 2256.3588 9475.7631 moveto
+2271.8877 9081.307 2534.3192 2415.1961 2553.5312 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 2557.0319 1927.2351 moveto
+2553.9281 1917.1051 lineto
+2550.0373 1926.9596 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 2557.0319 1927.2351 moveto
+2553.9281 1917.1051 lineto
+2550.0373 1926.9596 lineto
+closepath stroke
+grestore
+% linux/config.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+3218.6408 9494 59.4686 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+3179.5563 9489.8 moveto 78.1689 (linux/config.h) alignedtext
+grestore
+% linux/config.h->hooks.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 3224.7432 9476.0705 moveto
+3357.9842 9084.5946 5630.1234 2408.8124 5794.2891 1926.4762 curveto
+stroke
+0 0 0 edgecolor
+newpath 5797.6682 1927.4108 moveto
+5797.5769 1916.8163 lineto
+5791.0415 1925.1553 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5797.6682 1927.4108 moveto
+5797.5769 1916.8163 lineto
+5791.0415 1925.1553 lineto
+closepath stroke
+grestore
+% linux/config.h->selinuxfs.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 3217.0464 9475.7631 moveto
+3182.5607 9081.307 2599.7697 2415.1961 2557.105 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 2560.5814 1926.7622 moveto
+2556.2237 1917.1051 lineto
+2553.608 1927.3719 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 2560.5814 1926.7622 moveto
+2556.2237 1917.1051 lineto
+2553.608 1927.3719 lineto
+closepath stroke
+grestore
+% linux/module.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+5596.6408 9494 63.8035 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+5554.0598 9489.8 moveto 85.1621 (linux/module.h) alignedtext
+grestore
+% linux/module.h->hooks.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 5597.1379 9475.7631 moveto
+5607.8887 9081.307 5789.572 2415.1961 5802.8726 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 5806.3735 1927.1968 moveto
+5803.1474 1917.1051 lineto
+5799.3761 1927.006 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5806.3735 1927.1968 moveto
+5803.1474 1917.1051 lineto
+5799.3761 1927.006 lineto
+closepath stroke
+grestore
+% linux/ptrace.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+5737.6408 9494 58.9495 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+5698.9597 9489.8 moveto 77.3623 (linux/ptrace.h) alignedtext
+grestore
+% linux/ptrace.h->hooks.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 5737.7993 9475.7631 moveto
+5741.2271 9081.307 5799.1551 2415.1961 5803.3959 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 5806.8964 1927.1351 moveto
+5803.4835 1917.1051 lineto
+5799.8966 1927.0743 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5806.8964 1927.1351 moveto
+5803.4835 1917.1051 lineto
+5799.8966 1927.0743 lineto
+closepath stroke
+grestore
+% linux/errno.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+5870.6408 9494 56.0683 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+5834.2873 9489.8 moveto 72.707 (linux/errno.h) alignedtext
+grestore
+% linux/errno.h->hooks.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 5870.4799 9475.7631 moveto
+5867.0002 9081.307 5808.1945 2415.1961 5803.8895 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 5807.3887 1927.0738 moveto
+5803.8005 1917.1051 lineto
+5800.389 1927.1356 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5807.3887 1927.0738 moveto
+5803.8005 1917.1051 lineto
+5800.389 1927.1356 lineto
+closepath stroke
+grestore
+% linux/sched.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+6002.6408 9494 57.5218 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+5965.1184 9489.8 moveto 75.0449 (linux/sched.h) alignedtext
+grestore
+% linux/sched.h->hooks.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 6002.163 9475.7631 moveto
+5991.8277 9081.307 5817.1659 2415.1961 5804.3793 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 5807.876 1927.0099 moveto
+5804.1152 1917.1051 lineto
+5800.8784 1927.1934 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5807.876 1927.0099 moveto
+5804.1152 1917.1051 lineto
+5800.8784 1927.1934 lineto
+closepath stroke
+grestore
+% linux/security.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+3360.6408 9494 64.5917 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+3317.3522 9489.8 moveto 86.5771 (linux/security.h) alignedtext
+grestore
+% linux/security.h->hooks.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 3366.408 9476.0705 moveto
+3492.3298 9084.5946 5639.6551 2408.8124 5794.8028 1926.4762 curveto
+stroke
+0 0 0 edgecolor
+newpath 5798.1798 1927.4077 moveto
+5797.91 1916.8163 lineto
+5791.516 1925.2642 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5798.1798 1927.4077 moveto
+5797.91 1916.8163 lineto
+5791.516 1925.2642 lineto
+closepath stroke
+grestore
+% linux/security.h->selinuxfs.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 3358.7055 9475.7631 moveto
+3316.8448 9081.307 2609.4208 2415.1961 2557.632 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 2561.098 1926.6799 moveto
+2556.5622 1917.1051 lineto
+2554.1371 1927.4186 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 2561.098 1926.6799 moveto
+2556.5622 1917.1051 lineto
+2554.1371 1927.4186 lineto
+closepath stroke
+grestore
+% linux/xattr.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+6131.6408 9494 53.1958 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+6097.6115 9489.8 moveto 68.0586 (linux/xattr.h) alignedtext
+grestore
+% linux/xattr.h->hooks.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 6130.8532 9475.7631 moveto
+6113.8181 9081.307 5825.9334 2415.1961 5804.8581 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 5808.351 1926.9447 moveto
+5804.4227 1917.1051 lineto
+5801.3575 1927.2468 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5808.351 1926.9447 moveto
+5804.4227 1917.1051 lineto
+5801.3575 1927.2468 lineto
+closepath stroke
+grestore
+% linux/capability.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+6274.6408 9494 71.8403 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+6225.9108 9489.8 moveto 97.46 (linux/capability.h) alignedtext
+grestore
+% linux/capability.h->hooks.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 6273.5099 9475.7631 moveto
+6249.0479 9081.307 5835.6524 2415.1961 5805.3888 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 5808.8759 1926.8692 moveto
+5804.7636 1917.1051 lineto
+5801.8893 1927.3026 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5808.8759 1926.8692 moveto
+5804.7636 1917.1051 lineto
+5801.8893 1927.3026 lineto
+closepath stroke
+grestore
+% linux/unistd.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+6423.6408 9494 58.9927 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+6384.9426 9489.8 moveto 77.3965 (linux/unistd.h) alignedtext
+grestore
+% linux/unistd.h->hooks.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 6422.1521 9475.7631 moveto
+6389.9516 9081.307 5845.7793 2415.1961 5805.9417 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 5809.4209 1926.7871 moveto
+5805.1188 1917.1051 lineto
+5802.4441 1927.3567 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5809.4209 1926.7871 moveto
+5805.1188 1917.1051 lineto
+5802.4441 1927.3567 lineto
+closepath stroke
+grestore
+% linux/mm.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+6551.6408 9494 51.2665 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+6519.1667 9489.8 moveto 64.9482 (linux/mm.h) alignedtext
+grestore
+% linux/mm.h->hooks.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 6549.8447 9475.7631 moveto
+6510.9964 9081.307 5854.4788 2415.1961 5806.4168 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 5809.8873 1926.7139 moveto
+5805.4239 1917.1051 lineto
+5802.921 1927.4 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5809.8873 1926.7139 moveto
+5805.4239 1917.1051 lineto
+5802.921 1927.4 lineto
+closepath stroke
+grestore
+% linux/mman.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+6680.6408 9494 59.4599 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+6641.5598 9489.8 moveto 78.1621 (linux/mman.h) alignedtext
+grestore
+% linux/mman.h->hooks.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 6678.535 9475.7631 moveto
+6632.9869 9081.307 5863.2463 2415.1961 5806.8955 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 5810.3555 1926.6376 moveto
+5805.7314 1917.1051 lineto
+5803.4017 1927.4406 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5810.3555 1926.6376 moveto
+5805.7314 1917.1051 lineto
+5803.4017 1927.4406 lineto
+closepath stroke
+grestore
+% linux/pagemap.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+6827.6408 9494 69.0906 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+6780.7907 9489.8 moveto 93.7002 (linux/pagemap.h) alignedtext
+grestore
+% linux/pagemap.h->hooks.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 6825.182 9475.7631 moveto
+6771.9993 9081.307 5873.2372 2415.1961 5807.4411 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 5810.8867 1926.5477 moveto
+5806.0818 1917.1051 lineto
+5803.9495 1927.4831 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5810.8867 1926.5477 moveto
+5806.0818 1917.1051 lineto
+5803.9495 1927.4831 lineto
+closepath stroke
+grestore
+% linux/swap.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+6970.6408 9494 55.601 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+6934.6701 9489.8 moveto 71.9414 (linux/swap.h) alignedtext
+grestore
+% linux/swap.h->hooks.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 6967.8386 9475.7631 moveto
+6907.229 9081.307 5882.9563 2415.1961 5807.9718 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 5811.4009 1926.4575 moveto
+5806.4227 1917.1051 lineto
+5804.4821 1927.5207 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5811.4009 1926.4575 moveto
+5806.4227 1917.1051 lineto
+5804.4821 1927.5207 lineto
+closepath stroke
+grestore
+% linux/smp_lock.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+7115.6408 9494 71.5307 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+7066.8356 9489.8 moveto 97.6104 (linux/smp_lock.h) alignedtext
+grestore
+% linux/smp_lock.h->hooks.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 7112.4905 9475.7631 moveto
+7044.3501 9081.307 5892.8112 2415.1961 5808.5099 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 5811.9196 1926.3633 moveto
+5806.7684 1917.1051 lineto
+5805.0218 1927.5549 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5811.9196 1926.3633 moveto
+5806.7684 1917.1051 lineto
+5805.0218 1927.5549 lineto
+closepath stroke
+grestore
+% linux/spinlock.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+7272.6408 9494 67.1868 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+7227.3356 9489.8 moveto 90.6104 (linux/spinlock.h) alignedtext
+grestore
+% linux/spinlock.h->hooks.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 7269.1135 9475.7631 moveto
+7192.8191 9081.307 5903.4818 2415.1961 5809.0925 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 5812.478 1926.2585 moveto
+5807.1426 1917.1051 lineto
+5805.6054 1927.5878 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5812.478 1926.2585 moveto
+5807.1426 1917.1051 lineto
+5805.6054 1927.5878 lineto
+closepath stroke
+grestore
+% linux/file.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+7406.6408 9494 48.8528 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+7376.1115 9489.8 moveto 61.0586 (linux/file.h) alignedtext
+grestore
+% linux/file.h->hooks.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 7402.7917 9475.7631 moveto
+7319.5379 9081.307 5912.5891 2415.1961 5809.5898 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 5812.9518 1926.1667 moveto
+5807.4621 1917.1051 lineto
+5806.1027 1927.6123 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5812.9518 1926.1667 moveto
+5807.4621 1917.1051 lineto
+5806.1027 1927.6123 lineto
+closepath stroke
+grestore
+% linux/namei.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+7532.6408 9494 58.9668 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+7493.9528 9489.8 moveto 77.376 (linux/namei.h) alignedtext
+grestore
+% linux/namei.h->hooks.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 7528.4892 9475.7631 moveto
+7438.6913 9081.307 5921.1527 2415.1961 5810.0575 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 5813.3949 1926.0787 moveto
+5807.7624 1917.1051 lineto
+5806.5695 1927.6325 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5813.3949 1926.0787 moveto
+5807.7624 1917.1051 lineto
+5806.5695 1927.6325 lineto
+closepath stroke
+grestore
+% linux/mount.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+7669.6408 9494 59.9531 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+7630.1667 9489.8 moveto 78.9482 (linux/mount.h) alignedtext
+grestore
+% linux/mount.h->hooks.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 7665.1602 9475.7631 moveto
+7568.2233 9081.2099 5929.6581 2411.916 5810.4777 1926.8274 curveto
+stroke
+0 0 0 edgecolor
+newpath 5813.8739 1925.9812 moveto
+5808.089 1917.1051 lineto
+5807.0761 1927.6514 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5813.8739 1925.9812 moveto
+5808.089 1917.1051 lineto
+5807.0761 1927.6514 lineto
+closepath stroke
+grestore
+% linux/ext2_fs.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+7810.6408 9494 63.319 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+7768.4494 9489.8 moveto 84.3828 (linux/ext2_fs.h) alignedtext
+grestore
+% linux/ext2_fs.h->hooks.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 7805.8217 9475.7631 moveto
+7701.5599 9081.2099 5939.1803 2411.916 5810.9943 1926.8274 curveto
+stroke
+0 0 0 edgecolor
+newpath 5814.3639 1925.879 moveto
+5808.4251 1917.1051 lineto
+5807.5962 1927.6674 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5814.3639 1925.879 moveto
+5808.4251 1917.1051 lineto
+5807.5962 1927.6674 lineto
+closepath stroke
+grestore
+% linux/proc_fs.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+7955.6408 9494 63.7949 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+7913.0632 9489.8 moveto 85.1553 (linux/proc_fs.h) alignedtext
+grestore
+% linux/proc_fs.h->hooks.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 7950.4735 9475.7631 moveto
+7838.6791 9081.2099 5948.9726 2411.916 5811.5256 1926.8274 curveto
+stroke
+0 0 0 edgecolor
+newpath 5814.8644 1925.7722 moveto
+5808.7708 1917.1051 lineto
+5808.1295 1927.6805 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5814.8644 1925.7722 moveto
+5808.7708 1917.1051 lineto
+5808.1295 1927.6805 lineto
+closepath stroke
+grestore
+% linux/kd.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+8083.6408 9494 46.4392 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+8055.0563 9489.8 moveto 57.1689 (linux/kd.h) alignedtext
+grestore
+% linux/kd.h->hooks.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 8078.2584 9476.0705 moveto
+7960.7383 9084.5946 5956.6852 2408.8124 5811.8891 1926.4762 curveto
+stroke
+0 0 0 edgecolor
+newpath 5815.2167 1925.3877 moveto
+5808.9892 1916.8163 lineto
+5808.5123 1927.4004 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5815.2167 1925.3877 moveto
+5808.9892 1916.8163 lineto
+5808.5123 1927.4004 lineto
+closepath stroke
+grestore
+% net/icmp.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+8195.6408 9494 47.8665 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+8165.8976 9489.8 moveto 59.4863 (net/icmp.h) alignedtext
+grestore
+% net/icmp.h->hooks.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 8189.994 9476.0705 moveto
+8066.701 9084.5946 5964.2032 2408.8124 5812.2943 1926.4762 curveto
+stroke
+0 0 0 edgecolor
+newpath 5815.5944 1925.303 moveto
+5809.252 1916.8163 lineto
+5808.9177 1927.4059 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5815.5944 1925.303 moveto
+5809.252 1916.8163 lineto
+5808.9177 1927.4059 lineto
+closepath stroke
+grestore
+% net/ip.h>		/* for sysctl_local_port_range[] *
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+8442.6408 9494 181.5632 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+8306.7526 9489.8 moveto 271.7764 (net/ip.h>		/* for sysctl_local_port_range[] *) alignedtext
+grestore
+% net/ip.h>		/* for sysctl_local_port_range[] *->hooks.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 8436.3041 9475.7631 moveto
+8299.1761 9081.1107 5980.6956 2408.5608 5813.1831 1926.4626 curveto
+stroke
+0 0 0 edgecolor
+newpath 5816.4166 1925.1047 moveto
+5809.8283 1916.8075 lineto
+5809.8044 1927.4023 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5816.4166 1925.1047 moveto
+5809.8283 1916.8075 lineto
+5809.8044 1927.4023 lineto
+closepath stroke
+grestore
+% net/tcp.h>		/* struct or_callable used in sock_rcv_skb *
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+8878.6408 9494 236.1372 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+8699.7819 9489.8 moveto 357.7178 (net/tcp.h>		/* struct or_callable used in sock_rcv_skb *) alignedtext
+grestore
+% net/tcp.h>		/* struct or_callable used in sock_rcv_skb *->hooks.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 8871.2572 9475.7631 moveto
+8711.4344 9081.0137 6008.6185 2405.2783 5814.6161 1926.108 curveto
+stroke
+0 0 0 edgecolor
+newpath 5817.8476 1924.7631 moveto
+5810.8505 1916.8075 lineto
+5811.3592 1927.3901 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5817.8476 1924.7631 moveto
+5810.8505 1916.8075 lineto
+5811.3592 1927.3901 lineto
+closepath stroke
+grestore
+% asm/uaccess.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+3503.6408 9494 60.3945 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+3463.7941 9489.8 moveto 79.6934 (asm/uaccess.h) alignedtext
+grestore
+% asm/uaccess.h->hooks.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 3509.0704 9476.0705 moveto
+3627.6214 9084.5946 5649.2539 2408.8124 5795.3202 1926.4762 curveto
+stroke
+0 0 0 edgecolor
+newpath 5798.6969 1927.4015 moveto
+5798.2455 1916.8163 lineto
+5791.9973 1925.3727 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5798.6969 1927.4015 moveto
+5798.2455 1916.8163 lineto
+5791.9973 1925.3727 lineto
+closepath stroke
+grestore
+% asm/uaccess.h->selinuxfs.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 3501.3621 9475.7631 moveto
+3452.0746 9081.307 2619.1398 2415.1961 2558.1627 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 2561.616 1926.5939 moveto
+2556.9031 1917.1051 lineto
+2554.67 1927.4619 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 2561.616 1926.5939 moveto
+2556.9031 1917.1051 lineto
+2554.67 1927.4619 lineto
+closepath stroke
+grestore
+% asm/semaphore.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+3653.6408 9494 71.9962 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+3604.8493 9489.8 moveto 97.583 (asm/semaphore.h) alignedtext
+grestore
+% asm/semaphore.h->hooks.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 3658.8033 9475.7631 moveto
+3770.4938 9081.2099 5658.4441 2411.916 5795.7634 1926.8274 curveto
+stroke
+0 0 0 edgecolor
+newpath 5799.1594 1927.6803 moveto
+5798.5156 1917.1051 lineto
+5792.4241 1925.7736 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5799.1594 1927.6803 moveto
+5798.5156 1917.1051 lineto
+5792.4241 1925.7736 lineto
+closepath stroke
+grestore
+% asm/ioctls.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+3795.6408 9494 52.7027 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+3762.0046 9489.8 moveto 67.2725 (asm/ioctls.h) alignedtext
+grestore
+% asm/ioctls.h->hooks.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 3800.3811 9476.0705 moveto
+3903.8552 9084.693 5667.9668 2412.1692 5796.28 1926.8412 curveto
+stroke
+0 0 0 edgecolor
+newpath 5799.6794 1927.6765 moveto
+5798.8517 1917.1141 lineto
+5792.9119 1925.8873 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5799.6794 1927.6765 moveto
+5798.8517 1917.1141 lineto
+5792.9119 1925.8873 lineto
+closepath stroke
+grestore
+% linux/bitops.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+3925.6408 9494 58.9927 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+3886.9426 9489.8 moveto 77.3965 (linux/bitops.h) alignedtext
+grestore
+% linux/bitops.h->hooks.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 3930.1502 9475.7631 moveto
+4027.7106 9081.2099 5676.8131 2411.916 5796.76 1926.8274 curveto
+stroke
+0 0 0 edgecolor
+newpath 5800.1612 1927.6529 moveto
+5799.164 1917.1051 lineto
+5793.3659 1925.9726 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5800.1612 1927.6529 moveto
+5799.164 1917.1051 lineto
+5793.3659 1925.9726 lineto
+closepath stroke
+grestore
+% linux/interrupt.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+4070.6408 9494 67.6541 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+4024.9528 9489.8 moveto 91.376 (linux/interrupt.h) alignedtext
+grestore
+% linux/interrupt.h->hooks.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 4074.802 9475.7631 moveto
+4164.8076 9081.307 5685.857 2415.1961 5797.2093 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 5800.6973 1927.6331 moveto
+5799.5097 1917.1051 lineto
+5793.8727 1926.0759 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5800.6973 1927.6331 moveto
+5799.5097 1917.1051 lineto
+5793.8727 1926.0759 lineto
+closepath stroke
+grestore
+% linux/netdevice.h>	/* for network interface checks *
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+4353.6408 9494 197.4728 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+4205.3215 9489.8 moveto 296.6387 (linux/netdevice.h>	/* for network interface checks *) alignedtext
+grestore
+% linux/netdevice.h>	/* for network interface checks *->hooks.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 4357.1225 9475.7631 moveto
+4432.4301 9081.307 5705.0912 2415.1961 5798.2596 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 5801.7468 1927.584 moveto
+5800.1843 1917.1051 lineto
+5794.871 1926.2713 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5801.7468 1927.584 moveto
+5800.1843 1917.1051 lineto
+5794.871 1926.2713 lineto
+closepath stroke
+grestore
+% linux/netlink.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+4630.6408 9494 61.874 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+4589.6149 9489.8 moveto 82.0518 (linux/netlink.h) alignedtext
+grestore
+% linux/netlink.h->hooks.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 4633.4574 9475.7631 moveto
+4694.3787 9081.307 5723.9176 2415.1961 5799.2876 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 5802.7772 1927.5222 moveto
+5800.8446 1917.1051 lineto
+5795.8592 1926.4537 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5802.7772 1927.5222 moveto
+5800.8446 1917.1051 lineto
+5795.8592 1926.4537 lineto
+closepath stroke
+grestore
+% linux/quota.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+4767.6408 9494 57.0459 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+4730.5046 9489.8 moveto 74.2725 (linux/quota.h) alignedtext
+grestore
+% linux/quota.h->hooks.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 4770.1284 9475.7631 moveto
+4823.9344 9081.307 5733.2288 2415.1961 5799.796 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 5803.2874 1927.4864 moveto
+5801.1712 1917.1051 lineto
+5796.3517 1926.5403 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5803.2874 1927.4864 moveto
+5801.1712 1917.1051 lineto
+5796.3517 1926.5403 lineto
+closepath stroke
+grestore
+% linux/un.h>		/* for Unix socket types *
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+5014.6408 9494 172.4347 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+4886.1252 9489.8 moveto 257.0313 (linux/un.h>		/* for Unix socket types *) alignedtext
+grestore
+% linux/un.h>		/* for Unix socket types *->hooks.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 5016.5353 9475.7631 moveto
+5057.5131 9081.307 5750.0162 2415.1961 5800.7127 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 5804.2079 1927.4132 moveto
+5801.76 1917.1051 lineto
+5797.2453 1926.6899 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5804.2079 1927.4132 moveto
+5801.76 1917.1051 lineto
+5797.2453 1926.6899 lineto
+closepath stroke
+grestore
+% net/af_unix.h>	/* for Unix socket types *
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+5359.6408 9494 154.5611 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+5245.1252 9489.8 moveto 229.0313 (net/af_unix.h>	/* for Unix socket types *) alignedtext
+grestore
+% net/af_unix.h>	/* for Unix socket types *->hooks.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 5360.7069 9475.7631 moveto
+5383.7666 9081.307 5773.4642 2415.1961 5801.993 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 5805.4927 1927.2923 moveto
+5802.5824 1917.1051 lineto
+5798.5047 1926.8837 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 5805.4927 1927.2923 moveto
+5802.5824 1917.1051 lineto
+5798.5047 1926.8837 lineto
+closepath stroke
+grestore
+% linux/vmalloc.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+2484.6408 9494 65.7245 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+2440.508 9489.8 moveto 88.2656 (linux/vmalloc.h) alignedtext
+grestore
+% linux/vmalloc.h->selinuxfs.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 2484.8089 9475.7631 moveto
+2488.4444 9081.307 2549.8832 2415.1961 2554.381 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 2557.8815 1927.1369 moveto
+2554.4739 1917.1051 lineto
+2550.8818 1927.0724 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 2557.8815 1927.1369 moveto
+2554.4739 1917.1051 lineto
+2550.8818 1927.0724 lineto
+closepath stroke
+grestore
+% linux/string.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+2625.6408 9494 57.5391 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+2588.1115 9489.8 moveto 75.0586 (linux/string.h) alignedtext
+grestore
+% linux/string.h->selinuxfs.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 2625.4703 9475.7631 moveto
+2621.7829 9081.307 2559.4663 2415.1961 2554.9043 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 2558.4035 1927.0719 moveto
+2554.8101 1917.1051 lineto
+2551.4038 1927.1374 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 2558.4035 1927.0719 moveto
+2554.8101 1917.1051 lineto
+2551.4038 1927.1374 lineto
+closepath stroke
+grestore
+% flask.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+2734.6408 9494 33.3924 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+2716.1667 9489.8 moveto 36.9482 (flask.h) alignedtext
+grestore
+% flask.h->selinuxfs.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 2734.2086 9475.7631 moveto
+2724.8601 9081.307 2566.8746 2415.1961 2555.3088 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 2558.8059 1927.0193 moveto
+2555.0699 1917.1051 lineto
+2551.8079 1927.1852 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 2558.8059 1927.0193 moveto
+2555.0699 1917.1051 lineto
+2551.8079 1927.1852 lineto
+closepath stroke
+grestore
+% security.h
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+2356.6408 9494 44.3193 18 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+2329.6867 9489.8 moveto 53.9082 (security.h) alignedtext
+grestore
+% security.h->selinuxfs.c
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 2357.1162 9475.7631 moveto
+2367.3996 9081.307 2541.1837 2415.1961 2553.906 1927.1865 curveto
+stroke
+0 0 0 edgecolor
+newpath 2557.4069 1927.1929 moveto
+2554.1688 1917.1051 lineto
+2550.4093 1927.0104 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 2557.4069 1927.1929 moveto
+2554.1688 1917.1051 lineto
+2550.4093 1927.0104 lineto
+closepath stroke
+grestore
+endpage
+showpage
+grestore
+%%PageTrailer
+%%EndPage: 1
+%%Trailer
+%%Pages: 1
+%%BoundingBox: 36 36 612 756
+end
+restore
+%%EOF
